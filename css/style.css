@@ -1,0 +1,124 @@
+:root {
+    --cyan: hsl(185, 75%, 39%);
+    --desaturated_blue: hsl(229, 23%, 23%);
+    --dark_blue: hsl(227, 10%, 46%);
+    --dark_gray: hsl(0, 0%, 59%);
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    color: var(--dark_blue);
+    background-color: var(--cyan);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.top-bg {
+    position: absolute;
+    background: url("../img/bg-pattern-top.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 978px;
+    width: 978px;
+    top: -528px;
+    left: -284px;
+    z-index: -1;
+}
+
+.bottom-bg {
+    position: absolute;
+    background: url("../img/bg-pattern-bottom.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 978px;
+    width: 978px;
+    bottom: -628px;
+    right: -250px;
+    z-index: -1;
+}
+
+h3 {
+    color: var(--desaturated_blue);
+    font-weight: 700;
+}
+
+.card {
+    background-color: var(--white);
+    max-width: 325px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 5px 10px 10px 0px rgba(0,0,0,0.3);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 5px 10px 10px 0px rgba(0,0,0,0.15);
+}
+
+.hero img {
+    width: 100%;
+}
+
+.profile {
+    margin-top: -47px;
+}
+
+.profile img {
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.personal {
+    margin-top: 0.95rem;
+    margin-bottom: 2rem;
+}
+
+.age {
+    font-weight: 400;
+    color: var(--dark_gray);
+    margin-left: 0.25rem;
+}
+
+.city {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+
+}
+
+hr {
+    border: none;
+    height: 0.05rem;
+    background-color: var(--dark_gray);
+    opacity: 0.25;
+    margin-top: -0.5rem;
+}
+
+.social {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-top: 0.1rem;
+    padding: 1.4rem;
+}
+
+.social h3:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.social_sub {
+    margin-top: 0.36rem;
+    font-size: 0.6rem;
+    letter-spacing: 0.1rem;
+}
